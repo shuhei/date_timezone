@@ -5,8 +5,11 @@ module DateTimezone
     columns_hash.each do |name, col|
       next unless col.type == :date
       define_method("#{name}=") do |value|
-        time = value.is_a?(String) ? Time.zone.parse(value) : value
-        self[name] = time
+        self[name] = case value
+                     when String then Time.zone.parse(value)
+                     when Time then value.in_time_zone
+                     else value
+                     end
       end
     end
   end
