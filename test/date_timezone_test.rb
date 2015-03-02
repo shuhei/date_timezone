@@ -40,4 +40,14 @@ class DateTimezoneTest < ActiveSupport::TestCase
     person = Person.new(name: 'Ruby', birth_date: nil)
     assert_equal person.birth_date, nil
   end
+
+  test 'local time without zone assignment should work' do
+    person = Person.new(name: 'Ruby', birth_date: Time.local(2015, 3, 2))
+    assert_equal person.birth_date, Date.new(2015, 3, 2)
+  end
+
+  test 'utc time without zone assignment should work' do
+    person = Person.new(name: 'Ruby', birth_date: Time.utc(2015, 3, 2))
+    assert_equal person.birth_date, Date.new(2015, 3, 2)
+  end
 end
