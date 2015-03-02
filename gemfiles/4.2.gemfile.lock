@@ -1,5 +1,5 @@
 PATH
-  remote: .
+  remote: ../
   specs:
     date_timezone (0.1.0)
       rails (>= 3.0.0)
@@ -114,4 +114,5 @@ PLATFORMS
 DEPENDENCIES
   appraisal (~> 1)
   date_timezone!
+  rails (~> 4.2.0)
   sqlite3 (~> 1)
