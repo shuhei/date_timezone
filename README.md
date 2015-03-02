@@ -1,6 +1,7 @@
 # DateTimezone
 
-[![Build Status](https://travis-ci.org/shuhei/date_timezone.svg)](https://travis-ci.org/shuhei/date_timezone)
+[![Build Status](https://img.shields.io/travis/shuhei/date_timezone.svg)](https://travis-ci.org/shuhei/date_timezone)
+[![Gem Version](https://img.shields.io/gem/v/date_timezone.svg)](https://rubygems.org/gems/date_timezone)
 
 `DateTimezone` is an `ActiveRecord` concern that makes `date`-type attributes to convert `String` inputs to `Date` taking account of the application's timezone.
 
