@@ -1,5 +1,7 @@
 # DateTimezone
 
+[![Build Status](https://travis-ci.org/shuhei/date_timezone.svg)](https://travis-ci.org/shuhei/date_timezone)
+
 `DateTimezone` is an `ActiveRecord` concern that makes `date`-type attributes to convert `String` inputs to `Date` taking account of the application's timezone.
 
 ## Motivation
