@@ -2,7 +2,7 @@ PATH
   remote: .
   specs:
     date_timezone (0.0.1)
-      rails (~> 4.2.0)
+      rails (~> 4.2)
 
 GEM
   remote: https://rubygems.org/
@@ -109,4 +109,4 @@ PLATFORMS
 
 DEPENDENCIES
   date_timezone!
-  sqlite3
+  sqlite3 (~> 1)
